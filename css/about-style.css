@@ -1,0 +1,449 @@
+.aboutTable{
+	font-family: AndaleMono;
+	font-size: 20px;
+	margin: 0px auto;
+	width: 60%;
+}
+.aboutTable td{
+	padding: 15px;
+	width: 33.33%;
+}
+img{
+	width: 90%;
+	text-align: center;
+}
+.extra-padding{
+	height: 100%;
+}
+.btn-style{
+	width: 35%;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.btn-cv {
+	width: 15%;
+}
+.phoneTabela{
+	display: none;
+}
+.aboutMore{
+    text-align: center;
+}
+
+/* The Modal (education) */
+.educationModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important; /* Enable scroll if needed */ /*fixed can scroll, hidden no scoll*/
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.education-content {
+  position: relative;
+  overflow-y: initial !important
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  border: 0px;
+  width: auto !important;
+  display: inline-block;
+  padding: -30px;
+  margin-left:50%;
+  transform: translateX(-50%);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.education-bodyy{
+  overflow-y: auto;
+  background-color: #EEECE0;
+  box-shadow: 9px 11px;
+  border: 0.25px solid;
+
+  font-family: AndaleMono;
+  font-size: 20px;
+  
+  height: 600px;
+  width: 888px;
+  margin: 20px;
+}
+.colE{
+	padding-bottom: 5%;
+	border-right: 1px solid !important;
+}
+.modalTitle{
+  font-family: Retrocycles;
+  font-size: 40px;
+  color: #DB6B5E;
+  padding-left: 25px;
+}
+.rowT{
+ border-bottom: 0.25px solid;
+}
+.iks{
+	font-size: 35px;
+	margin-right: 0px;
+    margin-left: auto;
+    padding: 10px;
+}
+.rowFirst, .rowFirstS{
+	padding-top: 50px;
+}
+
+.education-dates{
+	border-collapse: collapse;
+	font-size: 100%
+}
+.education-dates td{
+	border: 0.25px solid;
+	padding: 20px;
+}
+.tekstR{
+	text-align: right;
+	padding-left: 30px;
+}
+.tekstL{
+	text-align: left;
+	padding-right: 30px;
+}
+.education-datesL{
+	margin-left: 0px; /*-15px da bo slo kcoj k onomi tajmlajni*/
+    margin-right: auto;
+}
+.education-datesR{
+	margin-right: 0px;
+    margin-left: auto;
+}
+.lastElement{
+	padding-bottom: 30px;
+}
+
+
+/*custom scroll bar*/
+.education-bodyy::-webkit-scrollbar, .skills-bodyy::-webkit-scrollbar {
+  width: 25px;
+}
+
+/* Track */
+.education-bodyy::-webkit-scrollbar-track, .skills-bodyy::-webkit-scrollbar-track {
+  border: 1px solid;    /*box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.education-bodyy::-webkit-scrollbar-thumb, .skills-bodyy::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.education-bodyy::-webkit-scrollbar-thumb:hover,.skills-bodyy::-webkit-scrollbar-thumb:hover {
+  background: #292929; 
+}
+
+
+
+/* The Modal (skills) */
+.skillsModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top:100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important; /* Enable scroll if needed */ /*fixed can scroll, hidden no scoll*/
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.skills-content {
+  position: relative;
+  overflow-y: initial !important
+  background-color: rgba(0,0,0,0); /* Black w/ opacity */
+  border: 0px;
+  width: auto !important;
+  display: inline-block;
+  padding: -30px;
+  margin-left:50%;
+  transform: translateX(-50%);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.skills-bodyy{
+  overflow-y: auto;
+  background-color: #EEECE0;
+  box-shadow: 9px 11px;
+  border: 0.25px solid;
+
+  font-family: AndaleMono;
+  font-size: 20px;
+  
+  height: 600px;
+  width: 888px;
+  margin: 20px;
+}
+.colS{
+	padding-bottom: 5%;
+}
+.rowS{
+	padding-bottom: 40px;
+}
+.zvezda{
+	font-size: 35px;
+	text-align: center !important;
+    padding: 4px;
+}
+.rowFirst, .rowFirstS{
+	padding-top: 50px;
+}
+
+.skills-dates{
+	border-collapse: collapse;
+	font-size: 100%;
+	width: 85%;
+}
+.skills-dates td{
+	border: 0.25px solid;
+	padding: 15px;
+}
+
+.lastElementS{
+	padding-bottom: 30px;
+}
+
+.noBottom{
+	border: 0px solid !important;
+	border-left: 0.25px solid !important;
+}
+.noBorder{
+	border: 0px solid !important;
+}
+.allBorder{
+	border: 0.25px solid !important;	
+}
+.borderL{
+	border-left: 0.25px solid !important;
+}
+.borderR{
+	border-right: 0.25px solid !important;
+}
+.borderT{
+	border-top: 0.25px solid !important;
+}
+.borderB{
+	border-bottom: 0.25px solid !important;
+}
+.leftCol{
+	width: 20% !important;
+}
+.rightCol{
+	width: 80% !important;
+}
+.tableRight{
+	margin-left: 20px !important;
+}
+.tableLeft{
+	margin-left: 40px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 1250px) {
+	.btn-style{
+		width: 100%;
+	}
+	.education-bodyy{
+	  width: 780px;
+	}
+	.skills-bodyy{
+	  width: 780px;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.modalTitle{
+	  padding-top: 10px;
+	}
+	/*edu modal*/
+	.educationModal {
+	  padding-top:40px; /* Location of the box */
+	}
+	.education-content {
+	  padding: -30px;
+	}
+	.education-bodyy{
+	  width: 500px;
+	}
+	.colE{
+		padding-bottom: 0 !important;
+		border-right: 0px solid !important;
+	}
+	.rowT{
+	 border-bottom: 0.25px solid;
+	}
+	.rowFirst{
+		padding-top: 25px;
+	}
+	.rowFirstS{
+		padding-top: 0px;
+	}
+	.education-dates td{
+		padding: 14px;
+		width: 100%;
+	}
+	.tekstE{
+		text-align: left !important;
+		padding-left: 15px;	
+		padding-right: 15px;	
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.education-datesL{
+		margin-left: 15px;
+		margin-right: 15px;
+		margin-bottom:80px !important;
+	}
+	.education-datesR{
+		margin-left: 15px;
+		margin-right: 15px;	
+	}
+	.tekstL{
+		margin-top:10px !important;
+		margin-bottom:60px !important;
+	}
+	.tekstR{
+		margin-bottom:5px !important;
+	}
+	.lastElement{
+		padding-bottom: 10px;
+	}
+	.education-bodyy::-webkit-scrollbar, .skills-bodyy::-webkit-scrollbar {
+	  width: 15px;
+	}
+	.firstCol{
+	  width: 20% !important;
+	}
+	.secondCol{
+	  width: 80% !important;
+	}
+/* skills da bo mobile friendly Content */
+.skillsModal {
+  padding-top:40px; /* Location of the box */
+
+}
+.skills-content {
+  padding: -30px;
+}
+.skills-bodyy{
+  width: 500px;
+  font-size: 18px;
+}
+.colS{
+	padding-bottom: 0;
+}
+.rowS{
+	padding-bottom: 0;
+}
+.skills-dates{
+	border-collapse: collapse;
+	width: 85%;
+	margin: 20px !important;
+}
+.skills-dates td{
+	border: 0.25px solid;
+	padding: 10px;
+}
+.zvezda{
+	font-size: 29px;
+}
+.lastElementS{
+	padding-bottom: 15px;
+}
+.tableRight{
+	margin-left: default;
+}
+.tableLeft{
+	margin-left: default;
+}
+.tekstskills{
+	padding-bottom: 30px !important;
+}
+}
+@media (max-width: 768px) {
+	.kompTabela{
+	display: none;
+	}
+	.phoneTabela{
+	display: block;
+	margin-bottom: 50px;
+	}
+	.aboutTable{
+		font-family: AndaleMono;
+		font-size: 20px;
+		margin: 0px auto;
+		width: 90%;
+	}
+	.aboutTable td{
+		padding: 15px;
+		width: 33.33%;
+	}
+	img{
+		width: 90%;
+		text-align: center;
+	}
+	.extra-padding{
+		height: 100%;
+	}
+	.btn-style{
+		width: 90% !important;
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+
+.vertical-center{
+  position: static;
+  top: 0%;
+  transform: translateY(0%);
+}
+.vertical-bottom{
+  position: static;
+  top: 0%;
+  transform: translateY(0%);
+}
+.education-bodyy{
+  width: 340px;
+  height: 570px;
+}
+.skills-bodyy{
+  width: 340px;
+  height: 570px;
+}
+}
+@media (max-width: 576px) {
+	.about_mod{
+		margin-top: 7px !important;
+	}
+}

@@ -1,0 +1,467 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About me</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+	<!-- Ikone -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- nas css--> 
+	<link href="css/style.css" rel="stylesheet"> 
+	<link href="css/about-style.css" rel="stylesheet">
+</head>
+
+
+<body>
+<header id="myHeader">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<table class="navTab text-center" cellspacing="0">
+				<tr>
+					<td width="20%" class="logoTekst" onclick="location.href='index.html'" rowspan="2" >j.a.</td>
+					<td width="40%" rowspan="2" style="background-color: #000000;">about me</td>
+					<td width="20%" onclick="location.href='projects.html'" rowspan="2">projects</td>
+					<td width="20%" id="myBtn" rowspan="2">contact</td>
+				</tr>
+				<tr>
+				</tr>
+			</table>
+		</div>
+	</div>
+</header>
+<main class="mainn">
+<!-- saj vem da je to precej kmecka resitev but pls no judge -->
+<!-- tabela za komp -->
+<div class="kompTabela container-fluid vertical-center">
+	<div class="row text-center">
+		<div class="col-12">
+			<table class="aboutTable" border="1px;">
+				<tr>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td rowspan="4">
+						  ID<br><br>
+						<figure style="text-align: center"><img src="res/img/fotka_obrezana.jpg"></figure> 
+					</td>
+					<td class="extra-padding text-right align-bottom">Name</td>
+					<td class="extra-padding align-bottom">Jasmina</td>
+				</tr>
+				<tr>
+					<td class="text-right">Surname</td>
+					<td>Ajdini</td>
+				</tr>
+				<tr>
+					<td class="text-right">Birth Year</td>
+					<td>1997</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="aboutMore">
+							<button class="btn-style btn-cv btn-text" onclick="">
+								cv
+							</button>
+							<button id="btn-e" class="btn-style btn-text"onclick="">
+								education
+							</button>
+							<button id="btn-s" class="btn-style btn-text"onclick="">
+								skills
+							</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- tabela za phone -->
+<div class="phoneTabela container-fluid vertical-center">
+	<div class="row text-center">
+		<div class="col-12">
+			<table class="aboutTable" border="1px;">
+				<tr>
+					<td>ID</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="extra-padding text-right align-bottom">Name</td>
+					<td class="extra-padding align-bottom">Jasmina</td>
+				</tr>
+				<tr>
+					<td class="text-right">Surname</td>
+					<td>Ajdini</td>
+				</tr>
+				<tr>
+					<td class="text-right">Birth Year</td>
+					<td>1997</td>
+				</tr>
+				<tr>
+					<td class="aboutMore text-center" colspan="2">
+						<button class="btn-style btn-cv btn-text"onclick="">
+							cv
+						</button>
+						<button id="btn-ee" class="btn-style btn-text"onclick="">
+							education
+						</button>
+						<button id="btn-ss" class="btn-style btn-text"onclick="">
+							skills
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+</main>
+<footer class="homeFooter">
+	<div class="container-fluid padding vertical-bottom">
+		<div class="row text-center">
+			<div class="col-12">
+				<hr class="light">
+			</div>
+			<div class="col-12 social padding">
+				<a href="https://www.linkedin.com/in/jasminaajdini/" target="_blank"><i class="ico fab fa-linkedin-in"></i></a>
+				<a href="https://www.messenger.com/t/jasmina.ajdini" target="_blank"><i class="ico fab fa-facebook-messenger"></i></a>	
+				<a href="mailto:jasmina.ajdini.97@gmail.com" target="_blank"><i class="ico fas fa-envelope"></i></a>
+				<a href="https://www.behance.net/ajasmina/" target="_blank"><i class="ico fab fa-behance"></i></a>
+			</div>			
+			<div class="col-12">
+				<hr class="light">
+				<h5 class="copyText"><i class="far fa-copyright" style="font-size: 18px !important;"></i> 2020 jasmina ajdini</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+		<table class="kontakti" bgcolor="#EEECE0">
+			<tr class="empty">
+				<td class="prvoP"></td>
+				<td class="ikonaXP drugoP"><i id="closeM" onclick = "closeMond()" class="about_close far fa-times-circle"></i></td>
+			</tr>
+			<tr onclick="window.open('https://www.linkedin.com/in/jasminaajdini/','_blank')">
+				<td class="ikonaP tretjeP"><i class="fab fa-linkedin-in"></i></td>
+				<td class="poravnava cetrtoP">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="window.open('https://www.messenger.com/t/jasmina.ajdini','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-facebook-messenger"></i></td>
+				<td class="poravnava border-all">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="location.href='mailto:contact@ajasmina.com'">
+				<td class="ikonaP border-all"><i class="fas fa-envelope"></i></td>
+				<td class="poravnava border-all">contact@ajasmina.com</td>
+			</tr>
+			<tr onclick="window.open('https://www.behance.net/ajasmina/','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-behance"></i>
+			</td>
+				<td class="poravnava border-all">/ajasmina/</td>
+			</tr>
+			<tr class="empty">
+				<td class="poravnava border-all"></td>
+				<td class="poravnava border-all"> </td>
+			</tr>
+		</table>
+    </div>
+  </div>
+</div>
+
+
+<!-- ED MODAL -->
+<div id="educationModal" class="educationModal">
+  <!-- Modal content -->
+  <div class="education-content">
+    <div class="education-bodyy col-12">
+    	<div class="row rowT">
+    		<div class="modalTitle">education</div>
+    		<div class="iks"><i id="closeM" onclick = "closeMonde()" class="about_close about_mod far fa-times-circle"></i></div>
+    	</div>
+
+    	<div class="row">
+			<div class="colE col-md-12 col-lg-6 rowFirst">
+				<p class="tekstE tekstR">Applied for Post-graduate — master’s degree programme of Graphic and Interactive Communications.</p>
+			</div>
+			<div class="col-md-12 col-lg-6 rowFirstS">
+				<table class="education-dates education-datesL">
+					<tr>
+						<td class="firstCol">From</td>
+						<td class="secondCol">October 2016</td>
+					</tr>
+					<tr>
+						<td class="firstCol">Until</td>
+						<td class="secondCol"><i>Present</i></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+    	<div class="row">
+			<div class="colE col-md-12 col-lg-6">
+				<table class="education-dates education-datesR">
+					<tr>
+						<td class="firstCol"> Date </td>
+						<td class="secondCol">  </td>
+					</tr>
+					<tr>
+						<td colspan="2">September 5th, 2019</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-12 col-lg-6">
+				<p class="tekstE tekstL">In September of 2019, I presented my diploma thesis and received a Bachelor’s degree.</p>
+			</div>
+		</div>
+    	<div class="row">
+			<div class="colE col-md-12 col-lg-6">
+				<p class="tekstE tekstR">In 2019 I applied for international Honours Class in Ghent, Belgium. There I attended a 2 week summer course in flexible packgaging and recieved a Certificate from ESKO. </p>
+			</div>
+			<div class="col-md-12 col-lg-6">
+				<table class="education-dates education-datesL">
+					<tr>
+						<td class="firstCol">From</td>
+						<td class="secondCol">July 15th</td>
+					</tr>
+					<tr>
+						<td class="firstCol">Until</td>
+						<td class="secondCol">July 29th</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+    	<div class="row">
+			<div class="colE col-md-12 col-lg-6">
+				<table class="education-dates education-datesR">
+					<tr>
+						<td class="firstCol">From</td>
+						<td class="secondCol">October 2016</td>
+					</tr>
+					<tr>
+						<td class="firstCol">Until</td>
+						<td class="secondCol">September 2019</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-12 col-lg-6 lastElement">
+				<p class="tekstE tekstL">After high school I continued my education on the Faculty of Natural Sciences and Engineering, department of textile, graphic and design. I applied for the Undergraduate study programme Graphic and Interactive Communications.</p>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SKILLS MODAL -->
+<div id="skillsModal" class="skillsModal">
+  <!-- Modal content -->
+  <div class="skills-content">
+    <div class="skills-bodyy col-12">
+    	<div class="row rowT">
+    		<div class="modalTitle">skills</div>
+    		<div class="iks"><i id="closeM" onclick = "closeMonds()" class="about_close about_mod far fa-times-circle"></i></div>
+    	</div>
+
+    	<div class="row rowS">
+			<div class="colS col-md-12 col-lg-6 rowFirstS">
+				<table class="skills-dates tableLeft">
+					<tr>
+						<td class="noBorder tekstskills" colspan="2">I am used to working on MAC and WIN operating system.<br><br>Here I listed software I am using most often, but I am familiar with others too. With a star symbol I marked my personal favourites.</td>
+					</tr>					
+					<tr>
+						<td class="leftCol">  </td>
+						<td class="rightCol">Languages</td>
+					</tr>
+					<tr>
+						<td class="leftCol">B2</td>
+						<td class="rightCol">English</td>
+					</tr>
+					<tr>
+						<td class="leftCol">B1</td>
+						<td class="rightCol">German</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-12 col-lg-6 rowFirstS">
+				<table class="skills-dates tableRight">
+					<tr>
+						<td class="leftCol">From</td>
+						<td class="rightCol">Adobe</td>
+					</tr>
+					<tr>
+						<td class="leftCol noBottom text-center"><i class="zvezda fas fa-star"></i></td>
+						<td class="rightCol">Photoshop</td>
+					</tr>
+					<tr>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">InDesign</td>
+					</tr>
+					<tr>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">Illustrator</td>
+					</tr>	
+					<tr>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">XD</td>
+					</tr>
+					<tr>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">Lightroom</td>
+					</tr>
+					<tr>
+						<td class="leftCol noBottom"></td>
+						<td class="rightCol">Premiere Pro</td>
+					</tr>
+					<tr>
+						<td class="leftCol noBottom borderB"></td>
+						<td class="rightCol">Animate</td>
+					</tr>			
+				</table>
+			</div>
+		</div>
+    	<div class="row rowS">
+			<div class="colS col-md-12 col-lg-6">
+				<table class="skills-dates tableLeft lastElementS">
+					<tr>
+						<td class="">For</td>
+						<td class="">Type</td>
+					</tr>
+					<tr>
+						<td class="noBottom text-center"><i class="zvezda fas fa-star"></i></td>
+						<td class="noBorder borderL borderR">Glypgs</td>
+					</tr>
+					<tr>
+						<td class="noBottom"></td>
+						<td class="noBorder borderL borderR">Fontlab</td>
+					</tr>
+					<tr>
+						<td class="">For</td>
+						<td class="">3D</td>
+					</tr>
+					<tr>
+						<td class=""></td>
+						<td class="">Blender</td>
+					</tr>
+					<tr>
+						<td class="">For</td>
+						<td class="">Illustration</td>
+					</tr>
+					<tr>
+						<td class="noBottom text-center"><i class="zvezda fas fa-star"></i></td>
+						<td class="noBorder borderL borderR">Procreate</td>
+					</tr>
+					<tr>
+						<td class="noBottom"></td>
+						<td class="noBorder borderL borderR">Affinity designer</td>
+					</tr>
+					<tr>
+						<td class="">For</td>
+						<td class="">Presentations</td>
+					</tr>
+					<tr>
+						<td class="noBottom text-center"><i class="zvezda fas fa-star"></i></td>
+						<td class="noBorder borderL borderR">PowerPoint</td>
+					</tr>
+					<tr>
+						<td class="noBottom borderB"></td>
+						<td class="noBorder borderL borderR borderB">Keynote</td>
+					</tr>			
+				</table>
+			</div>
+			<div class="col-md-12 col-lg-6">
+				<table class="skills-dates tableRight lastElementS allBorder">
+					<tr><td class="">Printing</td></tr>
+					<tr><td class="noBottom">preparing files for print and cut</td></tr>
+					<tr><td class="noBottom">printing on wide format inkjet printers (plotters)</td></tr>
+					<tr><td class="noBottom">using RIP (Fiery)</td></tr>
+					<tr><td class="noBottom">color management (i1profiler)</td></tr>
+					<tr><td class="">Others</td></tr>
+					<tr><td class="noBottom">scanning </td></tr>
+					<tr><td class="noBottom">framing</td></tr>
+					<tr><td class="noBottom">lining</td></tr>
+					<tr><td class="noBottom"> studio photography</td></tr>			
+				</table>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+
+
+<script>  //EDUCATION MODAL
+	var modale = document.getElementById("educationModal");
+	var btne = document.getElementById("btn-e");
+	var btnee = document.getElementById("btn-ee");
+
+	function closeMonde(){
+		modale.style.display = "none";
+	}
+
+	btne.onclick = function(){modale.style.display = "block";}
+	btnee.onclick = function(){modale.style.display = "block";}
+	//ce kliknes izven okenca bo zaprlo vse modale
+	window.onclick = function(event) {
+	  if (event.target == modale) {
+	    closeMonde();
+	  }
+	  if (event.target == modals) {
+	    closeMonds();
+	  }
+	  if (event.target == modal) {
+	    closeMond();
+	  }	  	  
+	}
+</script>
+
+<script>  //SKILLS MODAL
+	var modals = document.getElementById("skillsModal");
+	var btns = document.getElementById("btn-s");
+	var btnss = document.getElementById("btn-ss");
+
+	function closeMonds(){
+		modals.style.display = "none";
+	}
+
+	btns.onclick = function(){modals.style.display = "block";}
+	btnss.onclick = function(){modals.style.display = "block";}
+
+</script>
+
+<script>  //CONTACTS MODAL
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var close = document.getElementById("closeM");
+
+	function closeMond(){
+		modal.style.display = "none";
+	}
+
+	btn.onclick = function(){modal.style.display = "block";}
+	close.onclick = function(){modal.style.display = "none";}
+</script>
+
+
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
+
+</script>
+</body>
+</html>

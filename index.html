@@ -1,0 +1,121 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jasmina Ajdini</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+	<!-- Ikone -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- nas css--> 
+	<link href="css/style.css" rel="stylesheet"> 
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div class="container-fluid padding vertical-center">
+	<div class="row titleText text-center">
+		<div class="col-12">
+			<p>a.jasmina</p>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-12">
+			<button class="btn-style btn-text" onclick="location.href='about.html'">about me
+			</button>
+		</div>
+		<div class="col-12">
+			<button class="btn-style btn-text" onclick="location.href='projects.html'">projects
+			</button>
+		</div>
+		<div class="col-12">
+			<button class="btn-style btn-text" id="myBtn">contact
+			</button>
+		</div>
+	</div>
+</div>
+
+
+<footer class="homeFooter">
+	<div class="container-fluid padding vertical-bottom">
+		<div class="row text-center">
+			<div class="col-12">
+				<hr class="light text-center">
+			</div>
+			<div class="col-12 social padding">
+				<a href="https://www.linkedin.com/in/jasminaajdini/" target="_blank"><i class="ico fab fa-linkedin-in"></i></a>
+				<a href="https://www.messenger.com/t/jasmina.ajdini" target="_blank"><i class="ico fab fa-facebook-messenger"></i></a>	
+				<a href="mailto:jasmina.ajdini.97@gmail.com" target="_blank"><i class="ico fas fa-envelope"></i></a>
+				<a href="https://www.behance.net/ajasmina/" target="_blank"><i class="ico fab fa-behance"></i></a>
+			</div>			
+			<div class="col-12">
+				<hr class="light">
+				<h5 class="copyText"><i class="far fa-copyright" style="font-size: 18px !important;"></i> 2020 jasmina ajdini</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+		<table class="kontakti" bgcolor="#EEECE0">
+			<tr class="empty">
+				<td class="prvoP"></td>
+				<td class="ikonaXP drugoP"><i id="closeM" onclick = "closeMond()" class="about_close far fa-times-circle"></i></td>
+			</tr>
+			<tr onclick="window.open('https://www.linkedin.com/in/jasminaajdini/','_blank')">
+				<td class="ikonaP tretjeP"><i class="fab fa-linkedin-in"></i></td>
+				<td class="poravnava cetrtoP">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="window.open('https://www.messenger.com/t/jasmina.ajdini','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-facebook-messenger"></i></td>
+				<td class="poravnava border-all">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="location.href='mailto:jasmina.ajdini.97@gmail.com'">
+				<td class="ikonaP border-all"><i class="fas fa-envelope"></i></td>
+				<td class="poravnava border-all">jasmina.ajdini.97@gmail.com</td>
+			</tr>
+			<tr onclick="window.open('https://www.behance.net/ajasmina/','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-behance"></i>
+			</td>
+				<td class="poravnava border-all">/ajasmina/</td>
+			</tr>
+			<tr class="empty">
+				<td class="poravnava border-all"></td>
+				<td class="poravnava border-all"> </td>
+			</tr>
+		</table>
+    </div>
+  </div>
+</div>
+
+<script>
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var close = document.getElementById("closeM");
+
+	function closeMond(){
+		modal.style.display = "none";
+	}
+
+	btn.onclick = function(){modal.style.display = "block";}
+	close.onclick = function(){modal.style.display = "none";}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    closeMond();
+	  }
+	}
+</script>
+
+</body>
+</html>
