@@ -3,7 +3,7 @@
     <!-- KZS -->
 	<item>
 		<ID>0</ID>
-		<title><![CDATA[campaign for the basketball federation of slovenia]]></title>
+		<title><![CDATA[basketball games campaign]]></title>
 		<date><![CDATA[June 2018]]></date>
 		<client><![CDATA[The following project was made with cooperation with the Basketball Federation of Slovenia (KZS).]]></client>
 		<about><![CDATA[The following project was made with cooperation with the Basketball Federation of Slovenia (KZS). <br><br>The project aimed to design marketing material for the upcoming qualification games for the 2019 FIBA Basketball World Cup.  <br><br> We were designing billboards, mockups and other promotional materials. This part consisted of a <![CDATA[studio photoshoot along with filming and editing a short animation.  <br><br>Among all submitted entries, the client adopted ours. The posters and billboards we designed were advertised at various locations throughout the country until the start of the games.]]></about>
@@ -15,17 +15,18 @@
             </photos1>
             <podnaslov2><![CDATA[Drafts and mockups]]></podnaslov2>
             <photos2>
-            	<photo2>basket/KZS-03.jpg</photo2>
+            	<photo2>basket/KZS-03.png</photo2>
+            	<photo2>basket/gif-80w.gif</photo2>
             </photos2>
             <podnaslov3><![CDATA[Results]]></podnaslov3>
             <photos3>
             	<photo3>basket/KZS-04-1.jpg</photo3>
             	<photo3>basket/KZS-04-2.jpg</photo3>
-            	<photo3>basket/KZS-04-3.jpg</photo3>
+                <photo3>basket/KZS-04-80w.jpg</photo3>
             </photos3>
             <podnaslov4><![CDATA[0]]></podnaslov4>
             <photos4>
-            	<photo4>basket/gif.gif</photo4>
+            	<photo4>0</photo4>
             </photos4>
 
         <category><![CDATA[campaign design, event branding]]></category>
@@ -45,7 +46,7 @@
 
             <podnaslov1><![CDATA[Icons]]></podnaslov1>
             <photos1>
-            	<photo1>Huawei/Huawei-02.png</photo1>
+            	<photo1>Huawei/Huawei-02-60w.png</photo1>
             </photos1>
             <podnaslov2><![CDATA[Other themes]]></podnaslov2>
             <photos2>
@@ -53,7 +54,7 @@
             </photos2>
             <podnaslov3><![CDATA[Media]]></podnaslov3>
             <photos3>
-            	<photo3>Huawei/Huawei-04.jpg</photo3>
+            	<photo3>0</photo3>
             </photos3>
             <podnaslov4><![CDATA[0]]></podnaslov4>
             <photos4>
@@ -128,7 +129,7 @@
         <category><![CDATA[packaging design]]></category>
         <duration><![CDATA[1 month]]></duration>
         <software><![CDATA[Adobe InDesignr<br>Adobe Illustrator]]></software>
-        <credits><![CDATA[Patricija Selič<br>Klementina Možina<br>Jure Ahtik<br>Tanja Urbanc]]></credits>
+        <credits><![CDATA[>Klementina Možina]]></credits>
 
 	</item>	
     
@@ -161,7 +162,7 @@
         <category><![CDATA[website design]]></category>
         <duration><![CDATA[1 month]]></duration>
         <software><![CDATA[Adobe XD<br>Adobe Lightroom]]></software>
-        <credits><![CDATA[Patricija Selič<br>Klementina Možina<br>Jure Ahtik<br>Tanja Urbanc]]></credits>
+        <credits><![CDATA[Alena Selimović]]></credits>
 
 	</item>	
     
@@ -195,14 +196,14 @@
         <category><![CDATA[website design]]></category>
         <duration><![CDATA[1 month]]></duration>
         <software><![CDATA[Adobe XD<br>Adobe InDesign]]></software>
-        <credits><![CDATA[Patricija Selič<br>Klementina Možina<br>Jure Ahtik<br>Tanja Urbanc]]></credits>
+        <credits><![CDATA[Katja Komplet]]></credits>
 
 	</item>	
     
           <!-- POSTER -->
 	<item>
 		<ID>6</ID>
-		<title><![CDATA[illustrative japanese movie poster design]]></title>
+		<title><![CDATA[japanese movie poster design]]></title>
 		<date><![CDATA[February 2020]]></date>
 		<client><![CDATA[]]></client>
 		<about><![CDATA[The task was to design an illustrative poster based on a movie called »The Ballad of Narayama« set in a small rural village in the 19th century Japan. <br><br>The results were various formations of a poster/collage of pictures and illustrations. The idea was to show what life used to be like at that time.]]></about>
@@ -228,7 +229,7 @@
         <category><![CDATA[poster design]]></category>
         <duration><![CDATA[5 days]]></duration>
         <software><![CDATA[Adobe Photoshop<br>Procreate]]></software>
-        <credits><![CDATA[Patricija Selič<br>Klementina Možina<br>Jure Ahtik<br>Tanja Urbanc]]></credits>
+        <credits><![CDATA[Dare Birsa<br>Veronika Štampfl]]></credits>
 
 	</item>	
     
@@ -261,7 +262,7 @@
         <category><![CDATA[type design, calligraphy]]></category>
         <duration><![CDATA[1 week]]></duration>
         <software><![CDATA[Glyphs<br>Procreate]]></software>
-        <credits><![CDATA[Patricija Selič<br>Klementina Možina<br>Jure Ahtik<br>Tanja Urbanc]]></credits>
+        <credits><![CDATA[Klementina Možina]]></credits>
 
 	</item>	
     
@@ -274,9 +275,9 @@
 		<about><![CDATA[I designed a bold and bulky patterned linear font where each symbol has a unique pattern. The idea (like the name suggests) was inspired by random prints that fossils leave on rocks.]]></about>
         <featuredP>Fosil/Fosil-01.png</featuredP>
 
-	        <podnaslov1><![CDATA[0]]></podnaslov1>
+	        <podnaslov1><![CDATA[Result]]></podnaslov1>
 	        <photos1>
-	        	<photo1>0</photo1>
+	        	<photo1>Fosil/fosil-02.png</photo1>
 	        </photos1>
 	        <podnaslov2><![CDATA[0]]></podnaslov2>
 	        <photos2>
@@ -294,7 +295,7 @@
         <category><![CDATA[type design, calligraphy]]></category>
         <duration><![CDATA[1 month]]></duration>
         <software><![CDATA[Glyphs<br>Adobe Illustrator]]></software>
-        <credits><![CDATA[Patricija Selič<br>Klementina Možina<br>Jure Ahtik<br>Tanja Urbanc]]></credits>
+        <credits><![CDATA[Nace Pušnik]]></credits>
 
 	</item>	
     
@@ -325,7 +326,7 @@
 	        	<photo4>0</photo4>
 	        </photos4>
 
-        <category><![CDATA[packaging design, website design, app design]]></category>
+        <category><![CDATA[campaign design]]></category>
         <duration><![CDATA[2 months]]></duration>
         <software><![CDATA[Adobe Photoshop<br>Premiere Pro<br>Adobe XD]]></software>
         <credits><![CDATA[Karin Moder<br>Lucia Jamnik<br>Jure Ahtik<br>Veronika Štampfl]]></credits>
