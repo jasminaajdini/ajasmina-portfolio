@@ -251,12 +251,13 @@
         		return'<div class="row rowP"> <div class="col-12"> <div class="podnaslov">' + podnaslov + '</div> </div> </div>';
         	}else{return ""}
         }
+        
 
         //dva projekta imata medijo. pri teh hardkodan način - vem da je gnil način ampak moji mozgani v tem trenutko ne vidijo druge resitve
         var media="";
         if (title.includes("plecnik")) media = addMedia("plecnik");
         if (title.includes("huawei"))  media = addMedia("huawei");
-
+        if (title.includes("espresso"))  media = addMedia("espresso");
     	function addMedia(kateriProjekt){		//teh fotk se tudi ne da prilagajat velikost z onim w-jem v imenu
         	if (kateriProjekt == "plecnik"){
         		var img1="Plecnik/Plecnik-media-01.png";
@@ -270,6 +271,10 @@
         		var link1="https://siol.net/digisvet/novice/koscki-slovenije-na-pametnih-telefonih-vsega-sveta-469993";
         		var link2="https://www.dnevnik.si/1042826028";
         	}
+            if(kateriProjekt == "espresso"){
+                var embeded="http://www.youtube.com/embed/ClS-zzfPD8w?start=1&end=9&vq=hd1080&loop=1";
+                return '<div class="row rowModal"><div class="col-12" ><div class="embeded"> '+ embeded +'</div></div></div>';
+        }
         	return '<div class="row rowModal"><div class="col-md-12 col-lg-6"><a href="'+link1+'" target="_blank"><figure style="text-align: center"><img class="ideasImg hvr-push" style="width:100% !important;" src="res/img/portfolio/'+img1+'"></figure></a></div><div class="col-md-12 col-lg-6"><a href="'+link2+'" target="_blank"><figure style="text-align: center"><img class="ideasImg hvr-push" style="width:100% !important;" src="res/img/portfolio/'+img2+'"></figure></a></div></div>';
         }
 
