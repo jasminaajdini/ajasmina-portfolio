@@ -149,7 +149,17 @@ img{
   background: #292929; 
 }
 
-
+/* link css */ 
+a {                                  
+    color: #DB6B5E;
+        
+}
+a:hover, a:active {
+    color: black;
+    border: 1px solid;
+    text-decoration: none;
+        
+}
 
 /* The Modal (skills) */
 .skillsModal {
