@@ -1,32 +1,98 @@
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>404</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404</title>
     <!-- Logo -->
-    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
-    <!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
-	<!-- Ikone -->
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<!-- nas css--> 
-	<link href="css/style.css" rel="stylesheet"> 
-	<link href="css/404.css" rel="stylesheet"> 
+    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen" />
+    <!-- css-->
+    <style type="text/css">
+        @font-face {
+            font-family: 'Retrocycles';
+            src: url('../res/fonts/Retrocycles.otf') format('opentype'),
+                url('../res/fonts/Retrocycles.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Grotesk';
+            src: url('../res/fonts/Grotesk.otf') format('opentype'),
+                url('../res/fonts/Grotesk.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'AndaleMono';
+            src: url('../res/fonts/andalemo.ttf');
+        }
+        html,body{
+            overflow: hidden;
+            background-color: #EEECE0;
+        }
+
+
+        .error404 {
+            color: #DB6B5E;
+            font-family: AndaleMono;
+            font-size: 100px;
+        }
+
+        .text404 {
+            color: #000000;
+            font-family: AndaleMono;
+            font-size: 35px;
+        }
+
+        .back404 {
+            color: #000000;
+            font-family: AndaleMono;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #DB6B5E;
+        }
+
+        a:hover,
+        a:active {
+            text-decoration: none;
+            color: #000000;
+            border: 1px solid;
+        }
+
+        .parent {
+            display: grid;
+            place-items: center;
+            width: auto;
+            height: 100vh;
+
+            overflow: auto;
+        }
+
+        .child {
+            text-align: center;
+        }
+
+        body {
+            font-family: system-ui, serif;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-</header>
+    <header>
+    </header>
 
-<div class=" h-100 d-flex justify-content-center align-items-center">
-  <div class="text-center">
-    <div class="error404">404</div>
-    <div class="text404">I like hot dogs.</div>
-    <div class="back404">Go back <a href="http://ajasmina.com/" target="_blank">home</a></div>
-  </div>
-</div>
+
+    <div class="parent">
+        <div class="child">
+            <div class="error404">404</div>
+            <div class="text404">I like hot dogs.</div>
+            <div class="back404">Go back <a href="http://ajasmina.com/" target="_blank">home</a></div>
+        </div>
+    </div>
 
 </body>
+
 </html>
