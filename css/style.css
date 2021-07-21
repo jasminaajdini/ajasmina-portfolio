@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Retrocycles';
-  src:  url('../res/fonts/Retrocycles.otf')  format('opentype'),
-  		url('../res/fonts/Retrocycles.ttf')  format('truetype');
+  src:  url('../res/fonts/Europa-Bold.otf')  format('opentype'),
+  		url('../res/fonts/Europa-Bold.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'Grotesk';
-  src:  url('../res/fonts/Grotesk.otf')  format('opentype'),
-  		url('../res/fonts/Grotesk.ttf')  format('truetype');
+  src:  url('../res/fonts/Europa-Bold.otf')  format('opentype'),
+  		url('../res/fonts/Europa-Bold.ttf')  format('truetype');
 }
 @font-face {
   font-family: 'AndaleMono';
-  src: url('../res/fonts/andalemo.ttf');
+  src: url('../res/fonts/Karla-Regular.ttf');
 }
 
 html, body{
@@ -32,14 +32,14 @@ html, body{
 }
 
 .titleText{
-	color: #DB6B5E;
+	color: #1D4930;
 	font-family: Grotesk, sans-serif;
 	font-size: 50px;
 	margin-bottom: 45px;
 }
 
 .btn-text{
-	color: #DB6B5E;
+	color: #1D4930;
 	font-size: 30px;
 	text-align: center;
 	font-family: Retrocycles, sans-serif;
@@ -90,7 +90,7 @@ html, body{
 }
 
 .ico:hover, .about_close:hover{
-  color: #DB6B5E;
+  color: #1D4930;
   cursor:pointer;
 }
 
@@ -117,7 +117,7 @@ header{
   border: 0.25px solid #000000;
   padding-top: auto !important;
   padding-bottom: auto !important;
-  color: #DB6B5E;
+  color: #1D4930;
   font-family: Retrocycles, sans-serif;
   font-size: 25px;
 }
