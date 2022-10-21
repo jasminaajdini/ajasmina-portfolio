@@ -1,0 +1,296 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" type="img/png" href="res/img/favicon.png" media="screen"/> 
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+	<!-- Ikone -->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- nas css--> 
+	<link href="css/style.css" rel="stylesheet"> 
+	<link href="css/projects-style.css" rel="stylesheet">
+</head>
+
+
+<body>
+<header id="myHeader">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<table class="navTab text-center" cellspacing="0">
+				<tr>
+					<td width="20%" class="logoTekst" onclick="location.href='index.html'" rowspan="2">j.a.</td>
+					<td width="20%" onclick="location.href='about.html'" rowspan="2" >about me</td>
+					<td width="40%" rowspan="2" style="background-color: #000000;">projects</td>
+					<td width="20%" id="myBtn" rowspan="2">contact</td>
+				</tr>
+				<tr>
+				</tr>
+			</table>
+		</div>
+	</div>
+</header>
+<main>
+
+<div class="container-fluid">
+	<div id="vsiProjekti" class="row centriraj text-center ">
+		<!--Sem se vstavijo vsi projketi-->	
+	</div>
+</div>
+</main>
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<hr class="light">
+			</div>
+			<div class="col-12 social padding">
+				<a href="https://www.linkedin.com/in/ajasmina/" target="_blank"><i class="ico fab fa-linkedin-in"></i></a>
+				<a href="https://www.messenger.com/t/jasmina.ajdini" target="_blank"><i class="ico fab fa-facebook-messenger"></i></a>	
+				<a href="mailto:contact@ajasmina.com" target="_blank"><i class="ico fas fa-envelope"></i></a>
+				<a href="https://www.behance.net/ajasmina/" target="_blank"><i class="ico fab fa-behance"></i></a>
+			</div>			
+			<div class="col-12">
+				<hr class="light">
+				<h5 class="copyText"><i class="far fa-copyright" style="font-size: 18px !important;"></i> 2020 jasmina ajdini</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- MODAL -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+		<table class="kontakti" bgcolor="#ffffff">
+			<tr class="empty">
+				<td class="prvoP"></td>
+				<td class="ikonaXP drugoP"><i id="closeM" onclick = "closeMond()" class="about_close far fa-times-circle"></i></td>
+			</tr>
+			<tr onclick="window.open('https://www.linkedin.com/in/ajasmina/','_blank')">
+				<td class="ikonaP tretjeP"><i class="fab fa-linkedin-in"></i></td>
+				<td class="poravnava cetrtoP">/ajasmina/</td>
+			</tr>
+			<tr onclick="window.open('https://www.messenger.com/t/jasmina.ajdini','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-facebook-messenger"></i></td>
+				<td class="poravnava border-all">/jasminaajdini/</td>
+			</tr>
+			<tr onclick="location.href='mailto:contact@ajasmina.com'">
+				<td class="ikonaP border-all"><i class="fas fa-envelope"></i></td>
+				<td class="poravnava border-all">contact@ajasmina.com</td>
+			</tr>
+			<tr onclick="window.open('https://www.behance.net/ajasmina/','_blank')">
+				<td class="ikonaP border-all"><i class="fab fa-behance"></i>
+			</td>
+				<td class="poravnava border-all">/ajasmina/</td>
+			</tr>
+			<tr class="empty">
+				<td class="poravnava border-all"></td>
+				<td class="poravnava border-all"> </td>
+			</tr>
+		</table>
+    </div>
+  </div>
+</div>
+
+<!--Sem se vstavi modal-->
+<div id="testProjekt" class="testProjekt"></div>
+
+
+
+<script>
+	var modal = document.getElementById("myModal");
+	var btn = document.getElementById("myBtn");
+	var close = document.getElementById("closeM");
+
+	function closeMond(){
+		modal.style.display = "none";
+	}
+
+	btn.onclick = function(){modal.style.display = "block";}
+	close.onclick = function(){modal.style.display = "none";}
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    closeMond();
+	  }
+	  if (event.target == testProjekt) {
+	    closeProject();
+	  }
+	}
+
+	var testProjekt = document.getElementById("testProjekt");
+	//var openProjekt = document.getElementById("one");
+	//var closeProjekt = document.getElementById("closeButton");
+
+	function closeProject(){
+		testProjekt.style.display = "none";
+	}
+	function openProject(){
+		testProjekt.style.display = "block";
+	}
+
+	//openProjekt.onclick = function(){testProjekt.style.display = "block";}
+	//closeProjekt.onclick = function(){testProjekt.style.display = "none";}
+
+
+</script>
+<script>
+	window.onscroll = function() {myFunction()};
+
+	var header = document.getElementById("myHeader");
+	var sticky = header.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset > sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
+
+	function nextProject(trenutni){
+		if (trenutni==(x.length-1)) return 0;
+		closeProject();
+		trenutni ++;
+		izbiraProjekta(trenutni);
+	}
+	function previousProject(trenutni){
+		if (trenutni==0) return 0;
+		closeProject();
+		trenutni --;
+		izbiraProjekta(trenutni);
+	}
+</script>
+
+<script type="text/javascript">//naloži vse projekte
+    var x,xmlhttp,xmlDoc
+    xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "projects.xml", false);
+    xmlhttp.send();
+    xmlDoc = xmlhttp.responseXML; 
+    x = xmlDoc.getElementsByTagName("item");	//x vsebuje cel potrfolio ker smo v njega nalozili xml datoteko	
+    naloziCelotnoTabelo(); //bo nalozilo vse zgornje tabele
+
+    function naloziCelotnoTabelo(){
+    	var vseTabele = "";
+    	for (i = 0; i <x.length; i++) { 
+			//var id = x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue;      
+	        var title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+	        var category = x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue;
+     	    var featuredP = x[i].getElementsByTagName("featuredP")[0].childNodes[0].nodeValue;
+
+	        //check if table left/right
+	        var left;
+	        if (i%2==0){
+	        	left="right";
+	        }else{left="left";}
+	        vseTabele+= '<div class="col-md-12 col-lg-6"><table style="text-transform: lowercase;" class="project float-lg-'+left+'" onclick="izbiraProjekta('+i+')"><tr><th>title</th><td>' + title + '</td></tr><th>categories</th><td>' + category + '</td><tr></tr><tr><td align="center" colspan="2" class="contentt"><img class="featuredImg" src="res/img/portfolio/' + featuredP + '"></figure></td></tr></table></div>'
+    	}
+	    document.getElementById("vsiProjekti").innerHTML = vseTabele;
+
+    }
+
+    var htmlKoda="";
+    function izbiraProjekta(i){
+    	//preberi vse potrebne podatke za nas ID
+        //var id = x[i].getElementsByTagName("ID")[0].childNodes[0].nodeValue;      
+        var title = x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        var date = x[i].getElementsByTagName("date")[0].childNodes[0].nodeValue;
+        var client = x[i].getElementsByTagName("client")[0].childNodes[0].nodeValue;
+        var about = x[i].getElementsByTagName("about")[0].childNodes[0].nodeValue;
+        var featuredP = x[i].getElementsByTagName("featuredP")[0].childNodes[0].nodeValue;
+        var category = x[i].getElementsByTagName("category")[0].childNodes[0].nodeValue;
+        var duration = x[i].getElementsByTagName("duration")[0].childNodes[0].nodeValue;
+        var software = x[i].getElementsByTagName("software")[0].childNodes[0].nodeValue;
+        var credits = x[i].getElementsByTagName("credits")[0].childNodes[0].nodeValue;	
+        var photos1 = x[i].getElementsByTagName("photo1");
+        photos1 = zberiVseFotke(photos1);
+        var photos2 = x[i].getElementsByTagName("photo2");
+        photos2 = zberiVseFotke(photos2);
+        var photos3 = x[i].getElementsByTagName("photo3");
+        photos3 = zberiVseFotke(photos3);
+        var photos4 = x[i].getElementsByTagName("photo4");
+        photos4 = zberiVseFotke(photos4);
+        var podnaslov1 = x[i].getElementsByTagName("podnaslov1")[0].childNodes[0].nodeValue;
+        podnaslov1 = checkEmptyPodnaslov(podnaslov1);
+        var podnaslov2 = x[i].getElementsByTagName("podnaslov2")[0].childNodes[0].nodeValue;
+        podnaslov2 = checkEmptyPodnaslov(podnaslov2);
+        var podnaslov3 = x[i].getElementsByTagName("podnaslov3")[0].childNodes[0].nodeValue;
+        podnaslov3 = checkEmptyPodnaslov(podnaslov3);
+        var podnaslov4 = x[i].getElementsByTagName("podnaslov4")[0].childNodes[0].nodeValue;
+        podnaslov4 = checkEmptyPodnaslov(podnaslov4);
+
+
+        function zberiVseFotke(photos){
+        	var htmlKodaZaFotke = '';
+        	htmlKodaZaFotke += '<div class="row rowModal">';
+            for (var j = 0; j <photos.length; j++){             
+                var photo = photos[j].childNodes[0].nodeValue; 
+                //Check if empty photo
+                if(photo==0) return "";
+                //check if photo size is specified
+				var customWidth= "";
+				if(photo.includes("w.")){ //ima fotka nek width spec - pol ustvari to nov style in ga daj v kodo
+					var width = photo.slice(-7,-5);	//razrezi vstran velikost fotke
+					console.log(width + "%");
+					customWidth = 'style="width:'+width+'% !important;"';
+				}
+                htmlKodaZaFotke += '<div class="col-12"><figure style="text-align: center"><img class="ideasImg" '+customWidth+' src="res/img/portfolio/'+photo+'"></figure></div>';
+            }
+        	htmlKodaZaFotke += '</div>';
+        	return htmlKodaZaFotke;
+        }
+
+        function checkEmptyPodnaslov(podnaslov){
+        	if (podnaslov!=0){
+        		return'<div class="row rowP"> <div class="col-12"> <div class="podnaslov">' + podnaslov + '</div> </div> </div>';
+        	}else{return ""}
+        }
+        
+
+        //dva projekta imata medijo. pri teh hardkodan način - vem da je gnil način ampak moji mozgani v tem trenutko ne vidijo druge resitve
+        var media="";
+        if (title.includes("plecnik")) media = addMedia("plecnik");
+        if (title.includes("huawei"))  media = addMedia("huawei");
+        if (title.includes("espresso"))  media = addMedia("espresso");
+    	function addMedia(kateriProjekt){		//teh fotk se tudi ne da prilagajat velikost z onim w-jem v imenu
+        	if (kateriProjekt == "plecnik"){
+        		var img1="Plecnik/Plecnik-media-01.png";
+        		var img2="Plecnik/Plecnik-media-02.png";
+        		var link1="https://mgml.si/en/plecnik-house/news/664/plecnik-as-inspiration-allow-yourself-to-be-captivated-by-unique-jewellery-this-summer/";
+        		var link2="https://www.slovenskenovice.si/novice/slovenija/clanek/plecnik-ustvarjal-tudi-v-kuhinji-in-spalnici-190033";
+        	}
+        	if(kateriProjekt == "huawei"){
+        		var img1="Huawei/Huawei-media-01.png";
+        		var img2="Huawei/Huawei-media-02.png";
+        		var link1="https://siol.net/digisvet/novice/koscki-slovenije-na-pametnih-telefonih-vsega-sveta-469993";
+        		var link2="https://www.dnevnik.si/1042826028";
+        	}
+            if(kateriProjekt == "espresso"){
+                var embeded="http://www.youtube.com/embed/ClS-zzfPD8w?start=1&end=9&vq=hd1080&loop=1";
+                return '<div class="row rowModal"><div class="col-12" ><div class="embeded"> '+ embeded +'</div></div></div>';
+        }
+        	return '<div class="row rowModal"><div class="col-md-12 col-lg-6"><a href="'+link1+'" target="_blank"><figure style="text-align: center"><img class="ideasImg hvr-push" style="width:100% !important;" src="res/img/portfolio/'+img1+'"></figure></a></div><div class="col-md-12 col-lg-6"><a href="'+link2+'" target="_blank"><figure style="text-align: center"><img class="ideasImg hvr-push" style="width:100% !important;" src="res/img/portfolio/'+img2+'"></figure></a></div></div>';
+        }
+
+
+   		htmlKoda = "";
+		htmlKoda += '<div class="testP-content"><div class="testP-body"><div class="row rowT" style="margin: 0 !important"><table class="titleTabela"><tr><td class="modalTitle">' + title + '</td><td class="dateTitle">' + date;
+		htmlKoda += '</td> <td class="iks"><i id="closeM" onclick = "closeProject()" class="about_close about_mod far fa-times-circle"></i></td> </tr> </table> </div> <div class="row rowModal"> <div class="col-md-12 col-lg-5 col-xl-6 rowFirst"> <table class="aboutProjektTab" align="center"><tr><td class="text-right align-text-top">Client</td><td ">' + client + '</td> </tr> <tr > <td class="text-right align-text-top mobileDate">Date</td> <td class="mobileDate">'  + date + '</td> </tr> <tr> <td class="text-right align-text-top">About</td> <td ">' + about + '</td></tr></table></div>';
+		htmlKoda += '<div class="col-md-12 col-lg-7 col-xl-6 rowFirstS"> <figure style="text-align: center"><img class="featuredImg" src="res/img/portfolio/' + featuredP + '"></figure> </div> </div>';
+		htmlKoda += podnaslov1 + photos1 + podnaslov2 + photos2 + podnaslov3 + photos3 + podnaslov4 + photos4 + media;
+		htmlKoda += '<div class="row rowModal"><div class="col-12"><table class="infoProjektTab lastElementS" align="center"><tr><td class="noBorder" colspan="2">Poject detailes:</td></tr> <tr> <td class="text-right align-text-top">Category</td> <td>'+category+'</td> </tr> <tr> <td class="text-right align-text-top">Duration</td> <td>'+duration+ '</td> </tr> <tr> <td class="text-right align-text-top">Software</td><td>'+software+ '</td> </tr> <tr> <td class="text-right align-text-top">Credits</td> <td>'+credits+'</td></tr></table></div></div><div class="row rowModal"><div class="col-12"><table class="projectNav"><tr><td style="text-align: left;" onclick="previousProject('+i+')"><span id="content1">previous</span><span id="content2"> project</span></td><td style="text-align: right;" onclick="nextProject('+i+')"><span id="content1">next</span><span id="content2"> project</span></td></tr></table></div></div></div></div></div>';
+	    //vnesi vso to html kodo v projekt
+	    document.getElementById("testProjekt").innerHTML = htmlKoda;
+	    //odpri pravkar ustvarjen modal:
+	    openProject();
+    }
+
+</script>
+</body>
+</html>
